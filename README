@@ -1,11 +1,21 @@
 This is a very simple example to demonstrate how to get a post request parameters, both from the body and the url.
 
+Make sure you have the following installed:
+- nodejs
+- npm
+
 To test it, run the following:
 
-Step1: open a terminal and run the following:
+Step1: clone the repository:
+git clone https://github.com/tonylui/example-express-post-data.git
+
+Step2: install all the dependency via npm by 
+npm install
+
+Step3: open a terminal and run the following:
 node index.js
 
-Step2: open another terminal and run the following:
+Step4: open another terminal and run the following:
 curl --data "key=Hello" http://localhost:3000/World
 
 **Note: in the terminal you open in step1, you should able to see the log showing that the param received is 'World' and the body key received is 'Hello'
